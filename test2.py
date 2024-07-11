@@ -1,8 +1,6 @@
-while True:
-	line = input('> ')
-	if line[0] == '#': #es decir, si tiene
-		continue #"#" como primer caracter [0]
-	if line == 'chau':
-		break
-	print(line)
-print('chau!')
+line = 'From stephen.marquard@utc.ac.za Sat Jan  5 09:14:16 2008'
+words = line.split()
+email = words[1]
+pieces = email.split('@')
+host = pieces[1]
+print(host)
